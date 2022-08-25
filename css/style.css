@@ -1,0 +1,98 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, SansSerif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container{
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.35);
+    width: 80%;
+    height: 100%;
+    max-width: 900px;
+}
+
+.header{
+    color: white;
+    background: #010222;
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-container{
+    width: 100px;
+    height: 100px;
+}
+
+.profile-container #profilePic{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.main-info{
+    margin-left: 50px;
+}
+
+.main-info span{
+    color: white;
+    margin: 10px 0;
+}
+
+.download-cv{
+    margin: 15px 5px;
+    float: right;
+}
+
+#downloadBtn{
+    padding: 10px 20px;
+    background: #010222;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.footer-item a{
+    text-decoration: none;
+}
+
+.footer-item a:hover{
+    text-decoration: underline;
+}
+
+.footer-item .link-icon{
+    width: 25px;
+    height: 20px;
+    margin: 0 5px;
+}
+
+.content{
+    padding: 20px;
+}
+
+.content .personal-details, .education-details, .skills, .hobbies, .references{
+    margin: 10px 0;
+}
+
+.content .personal-detail-item, .education-item, .skill-item, .hobby-item, .reference-item{
+    margin: 10px 0;
+}
+
+.footer{
+    margin: 10px 0;
+    padding: 20px;
+}
+
+.footer-item{
+    margin: 10px 0;
+}
