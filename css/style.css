@@ -1,23 +1,24 @@
-*{
-    margin: 0; padding: 0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: sans-serif, SansSerif;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.main-container{
+.main-container {
     box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.35);
     width: 80%;
     height: 100%;
-    max-width: 900px;
+    max-width: 1200px;
 }
 
-.header{
+.header {
     color: white;
     background: #010222;
     padding: 50px;
@@ -25,34 +26,61 @@ body{
     height: 100%;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
-.profile-container{
-    width: 100px;
-    height: 100px;
+.profile-container {
+    width: 15rem;
+    height: 15rem;
 }
 
-.profile-container #profilePic{
+.profile-container #profilePic {
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
 }
 
-.main-info{
+.main-container .horizontal-line {
+    margin: 1.2rem 0;
+}
+
+.main-info {
     margin-left: 50px;
 }
 
-.main-info span{
+.main-info span {
     color: white;
     margin: 10px 0;
 }
 
-.download-cv{
+.main-container .education-details table {
+    border-collapse: collapse;
+    margin: 1rem 0.5rem;
+    width: 75%;
+}
+
+.main-container .education-details table caption {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.main-container .education-details table,
+th,
+td {
+    border: 0.1rem solid black;
+    text-align: center;
+    padding: 0.8rem 1.5rem;
+}
+
+.download-cv {
     margin: 15px 5px;
     float: right;
 }
 
-#downloadBtn{
+#downloadBtn {
     padding: 10px 20px;
     background: #010222;
     color: white;
@@ -62,37 +90,123 @@ body{
     text-decoration: none;
 }
 
-.footer-item a{
+.footer-item a {
     text-decoration: none;
 }
 
-.footer-item a:hover{
+.footer-item a:hover {
     text-decoration: underline;
 }
 
-.footer-item .link-icon{
-    width: 25px;
-    height: 20px;
+.footer-item .link-icon {
+    width: 2rem;
+    height: 2rem;
     margin: 0 5px;
+    object-fit: cover;
 }
 
-.content{
+.content {
     padding: 20px;
 }
 
-.content .personal-details, .education-details, .skills, .hobbies, .references{
+.content .personal-details,
+.education-details,
+.skills,
+.hobbies,
+.references {
     margin: 10px 0;
 }
 
-.content .personal-detail-item, .education-item, .skill-item, .hobby-item, .reference-item{
+.content .personal-detail-item,
+.education-item,
+.skill-item,
+.hobby-item,
+.reference-item {
     margin: 10px 0;
 }
 
-.footer{
+.content .personal-detail-item,
+.education-item,
+.skill-item,
+.hobby-item,
+ul {
+    list-style: circle;
+}
+
+.content .personal-detail-item,
+.education-item,
+.skill-item,
+.hobby-item,
+ul li {
+    margin-left: 0.5rem;
+}
+
+.footer {
     margin: 10px 0;
     padding: 20px;
 }
 
-.footer-item{
-    margin: 10px 0;
+.footer-item {
+    margin: 1rem 0;
+}
+
+.footer-item p {
+    font-size: 1rem;
+}
+
+.footer-item h4 {
+    font-size: 1.2rem;
+}
+
+.footer-item a {
+    font-size: 1.2rem;
+}
+
+.footer-item .social-links {
+    display: flex;
+}
+
+.footer-item .social-links .social-link {
+    margin-right: 1rem;
+    display: flex;
+}
+
+/* For Extra small devices (potrait phones)*/
+@media (max-width: 575.98px) {
+    .main-container {
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.35);
+        width: 100%;
+        height: 100%;
+    }
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .profile-container {
+        width: 10rem;
+        height: 10rem;
+        margin-bottom: 1rem;
+    }
+    .main-container .education-details table {
+        border-collapse: collapse;
+        margin: 1rem 0;
+        width: 100%;
+    }
+}
+
+/* For small Devices (landscape phone)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+/* For medium Devices (tablets)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* For large Devices (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* For extra large Devices (large desktops) */
+@media (min-width: 1200px) {
 }
