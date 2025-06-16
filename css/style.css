@@ -43,8 +43,8 @@ body {
 }
 
 .profile-container {
-  width: 55rem;
-  height: 15rem;
+  width: 700px;
+  height: 200px;
 }
 
 .profile-container #profilePic {
@@ -52,7 +52,7 @@ body {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  object-position: bottom;
+  object-position: top;
 }
 
 .main-container .horizontal-line {
